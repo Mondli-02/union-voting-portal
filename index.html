@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Voting App Demo</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-container">
+      <header>
+        <h1><i class="fas fa-vote-yea"></i> Voting Portal Demo</h1>
+        <p>Cast a vote for your preferred Leadership Candidate</p>
+      </header>
+
+      <div class="container">
+        <!-- Countdown Card -->
+        <div class="card">
+          <div class="card-header">
+            <h2><i class="fas fa-clock"></i> Voting Closes In</h2>
+          </div>
+          <div id="countdown">Loading...</div>
+          <button id="voteBtn" onclick="window.open('https://forms.gle/5e9Hc1k8uuHhmqRu7','_blank')">
+            <i class="fas fa-check-circle"></i> Cast Vote
+          </button>
+          <p id="total-votes"><i class="fas fa-chart-bar"></i> Total votes: 0</p>
+        </div>
+
+        <!-- Candidate Cards -->
+        <div class="candidates-grid" id="candidates"></div>
+
+        <!-- Chart Card -->
+        <div class="card">
+          <div class="card-header">
+            <h2><i class="fas fa-chart-pie"></i> Live Results</h2>
+          </div>
+          <div class="chart-container">
+            <canvas id="resultsChart"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <p>© 2025 Voting System || ZEHSSCWU</p>
+      </footer>
+    </div>
+
+    <div id="notification" class="notification">
+      <i class="fas fa-info-circle"></i>
+      <span id="notification-text"></span>
+    </div>
+
+    <div class="theme-toggle" id="themeToggle">
+      <i class="fas fa-moon"></i>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
