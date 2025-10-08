@@ -1,7 +1,7 @@
 
       // ===== CONFIG =====
       const GAS_URL = "https://script.google.com/macros/s/AKfycbx_L2k7yQAU-zPi_K3esdmtbNKEdMlbI9NZ6xHLhzm88cP48CFiSJfuGSMpjiJBvPWiOw/exec"; // change this
-      const deadline = new Date("2025-09-25T23:59:59").getTime();
+      const deadline = new Date("2025-10-25T23:59:59").getTime();
 
       const candidateData = {
         "BEN RUSERO": {
@@ -162,4 +162,5 @@
         }
       }      
       setInterval(loadVotes, 5000);
+
       loadVotes();
